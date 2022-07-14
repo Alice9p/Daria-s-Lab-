@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Daria's Lab</title>
+    <link rel="icon" type="image/webp" href="img/favicon.webp">
+    <meta name="theme-color" content="#FBF9FF">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="author" content="Alicia Molinero">
+    <meta name="keywords" content="Photography, blog, projects, presets, articles">
+    <meta name="description" content="Photography, projects and presets">
+    <meta property="og:image" content="img/screenshot.webp">
+    <meta property="og:title" content="Photography Web">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="Daria's Lab Photography">
+    <meta name="twitter:site" content="@cuenta">
+    <meta name="twitter:creator" content="@cuenta">
+    <meta property="og:image:type" content="image/webp">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="Camera">
+    <!-- Normalize -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sapps-studio/symbiosis-css/symbiosis.min.css">
+    <!-- CSS -->
+    <link href="css/mobile.css" rel="stylesheet" media="all and (max-width: 600px)">
+    <link href="css/desktop.css" rel="stylesheet" media="all and (min-width: 601px)">
+    <!-- End CSS -->
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <!-- End JavaScript -->
+</head>
+<body>
+    <!-- Header -->
+    <header class="header"  x-data="{ open: false }">
+        <div class="header__container">
+            <div class="header__items">
+                <div class="header__contact">
+                    <a href="contact.html">
+                        <span class="header__contact-text contact-mobile">Contact</span>
+                    </a>
+                </div>
+                <button class="button nav__open" @click="open = true">
+                    <img src="img/menu.svg" alt="Menu">
+                </button>
+                <!-- Logo -->
+                <div class="header__logo-enlace">
+                    <a href="index.html">
+                        <img class="header__items--img" src="img/DARIAS-LAB.svg" alt="Logo">
+                    </a>
+                </div>
+                <!-- Fin Logo -->
+                <div class="header__shopping-cart">
+                    <a href="cart.html">
+                        <span class="header__cart cart-mobile">Cart</span>
+                    </a>
+                    <a class="header__cart-enlace" href="cart.html">
+                        <img class="header__cart--img" src="img/bag.png" alt="cart">
+                    </a>
+                </div>
+            </div>
+            <!-- Nav -->
+            <nav class="nav" x-bind:class="open ? 'nav__show': ''">
+                <div class="nav__container nav__close-container">
+                    <button class="button nav__close" @click="open = false">
+                        <img src="img/close.svg" alt="Close">
+                    </button>
+                </div>
+                <ul class="nav__ul">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="photography.html" class="nav__link">Photography</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="presets.html" class="nav__link">Presets</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">About me</a>
+                    </li>
+                    <li class="nav__item nav__desktop">
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="privacy-policy">
+            <h2 class="privacy-title">Privacy policy</h2>
+            <p class="privacy-title__text">Valid from 2020-09-17</p>
+            <p class="privacy-title__text">This privacy policy describes what personal data we at dariaslab.com collect from you and how we use your personal data. The privacy policy also describes your rights and how you can exercise them.</p>
+            <section class="privacy">
+                <p class="privacy__text">You are always welcome to contact us if you have any questions or comments.</p>
+                <p class="privacy__text">This Privacy policy covers the following areas:</p>
+                <ul>
+                    <li class="privacy__text">
+                        <a href="#when do we collect your data ?" class="privacy__hover">When do we collect your data ?</a>
+                    </li>
+                    <li class="privacy__text">
+                        <a href="#what data do we collect ?" class="privacy__hover">What data do we collect ?</a>
+                    </li>
+                    <li class="privacy__text">
+                        <a href="#data we don’t collect or process" class="privacy__hover">Data we don’t collect or process.</a>
+                    </li>
+                    <li class="privacy__text">
+                        <a href="#why do we process your personal data ?" class="privacy__hover">Why do we process your personal data ?</a>
+                    </li>
+                    <li class="privacy__text">
+                        <a href="#who do we share your personal data with ?" class="privacy__hover">Who do we share your personal data with ?</a>
+                    </li>
+                    <li class="privacy__text">
+                        <a href="#how long we store your data" class="privacy__hover">How long we store your data</a>
+                    </li>
+                    <li class="privacy__text">
+                        <a href="#analysis Tools" class="privacy__hover">Analysis Tools</a>
+                    </li>
+                    <li class="privacy__text">
+                        <a href="#cookies" class="privacy__hover">Cookies</a>
+                    </li>
+                    <li class="privacy__text">
+                        <a href="#security" class="privacy__hover">Security</a>
+                    </li>
+                    <li class="privacy__text">
+                        <a href="#links to other websites" class="privacy__hover">Links to other websites</a>
+                    </li>
+                    <li class="privacy__text">
+                        <a href="#changes" class="privacy__hover">Changes </a>
+                    </li>
+                    <li class="privacy__text">
+                        <a href="#last updated" class="privacy__hover">Last updated</a>
+                    </li>
+                    <li class="privacy__text">
+                        <a href="#contact" class="privacy__hover">Contact</a>
+                    </li>
+                </ul>
+                <h3 id="when do we collect your data ?" class="privacy__title">1. When do we collect your data?</h3>
+                <p class="privacy__text">We collect your data when you:</p>
+                <ul>
+                    <li class="privacy__text">Purchase our products.</li>
+                    <li class="privacy__text">Communicate with our customer service, such as asking questions, processing of returns, guarantees or complaints.</li>
+                    <li class="privacy__text">Sign up for our newsletter.</li>
+                    <li class="privacy__text">Send us pictures or other information.</li>
+                    <li class="privacy__text">Using our contact form.</li>
+                    <li class="privacy__text">Access our website. Our website also uses cookies; to find out more about the use of cookies and how you can manage them, please read our Cookie policy.</li>
+                    <li class="privacy__text">When you engage with us on social media (by mentioning/tagging us or by contacting us directly).</li>
+                </ul>
+                <h3 id="what data do we collect ?" class="privacy__title">2. What data do we collect ?</h3>
+                <ul>
+                    <li class="privacy__text">Your contact information – name, postal address, mobile or telephone number, email address.</li>
+                    <li class="privacy__text">Your IP address and information about how you use our website.</li>
+                    <li class="privacy__text">Purchase details including your choice of payment and transaction number.</li>
+                    <li class="privacy__text">Your order history.</li>
+                    <li class="privacy__text">Customer service information – all kind of communication and correspondence between you and our customer service department.</li>
+                    <li class="privacy__text">If you are browsing our website, we may collect your IP address or other device identifier, browser type and version, time zone setting, browser plug-in types and versions, operating system and platform, and other portable device information.</li>
+                </ul>
+                <h3 id="data we don’t collect or process" class="privacy__title">3. Data we don’t collect or process</h3>
+                <p class="privacy__text">We do not store or process data from your credit cards such as card number, expire  date or CVS number. We don’t ask you to provide personal identification number. The payment providers are responsible for collecting and processing that kind of data. Below you can find our payment providers and a link to their Privacy Policy.</p>
+                <ul>
+                    <li class="privacy__text">PayPal – PayPal Privacy statement</li>
+                </ul>
+                <h3 id="why do we process your personal data ?" class="privacy__title">4. Why do we process your personal data?</h3>
+                <p class="privacy__text">Once you have provided your personal information to us at Jonna Jinton Sweden, we will use this information for the purposes and with the support of the legal basis set forth below:</p>
+                <ul>
+                    <li class="privacy__text">
+                        <strong>In order to fulfill our agreements with you as a customer, such as handling and delivering your order.</strong><br>The purchase agreement we have entered into with you is the legal basis for the processing and is necessary for us to be able to fulfill our contractual obligations and to fulfill this agreement with you, eg. so we can deliver your order and get paid.
+                    </li>
+                    <li class="privacy__text">
+                        <strong>To send our newsletter and promotional material – only in cases where you give your consent to it.</strong><br>The legal basis is our legitimate interest in being able to give information about, and market our products.
+                    </li>
+                </ul>
+                <h3 id="who do we share your personal data with ?" class="privacy__title">5. Who do we share your personal data with?</h3>
+                <p class="privacy__text">We will never sell any of your personal data to a third party, and does not provide your personal information to third parties, unless required by law to do so or except for the operational necessities listed below:</p>
+                <ul>
+                    <li class="privacy__text">We provide your name, address, email and possibly phone number to the shipping company that delivers your product.</li>
+                    <li class="privacy__text">We transfers the necessary personal data to accountancy service providers as well as tax and other public authorities when specific legislation requires this.</li>
+                    <li class="privacy__text">Sometimes we need to confirm your personal data with payment service providers, in order to prevent financial fraud or identity theft.</li>
+                </ul>
+                <h3 id="how long we store your data" class="privacy__title">6. How long we store your data</h3>
+                <p class="privacy__text">We will keep your data for as long as they are needed for the purposes for which your data was collected and processed or required by laws and regulations.</p>
+                <p class="privacy__text">This means that we keep your data for as long as necessary for the performance of a contract and as required by retention requirements in laws and regulations.</p>
+                <h3 id="analysis Tools" class="privacy__title">7. Analysis Tools</h3>
+                <p class="privacy__text">This website uses Google Analytics®, a web analytics service provided by Google Inc. (“Google”). Google Analytics uses so-called “cookies”, which are text files stored on your computer, enabling the analysis of the use of the website. The information generated by cookies on the use of this website (including the IP address) are in the context of using Google Analytics conferred on a Google server in the U.S. and stored there. Google will use this information to evaluate your use of the website, compiling reports on website activity for website operators and providing other use of the website and Internet services. Google will transmit this information to third parties if required by law or if third parties process this data on Google’s behalf. Google will not associate your IP address with any other data held by Google. You may refuse the use of cookies by selecting the appropriate settings on your browser; however, it is important to note that you cannot use all features of this website. By using this website you agree to the processing of your data by Google in the manner described and for the purpose mentioned above.</p>
+                <h3 id="cookies" class="privacy__title">8. Cookies</h3>
+                <p class="privacy__text">In some areas of our website, we reserves the right to use cookies in order to make our service more user-friendly, more effective and safer. Cookies are small pieces of information that are stored on your computer and that your browser memorises. Cookies do not damage your computer and do not contain any viruses. Most of the cookies we use are so-called “session cookies”. They are automatically deleted after your visit (“session”) from your hard drive. Other cookies remain on your computer which enables us to recognize your computer during your next visit, so that, for example, you do not have to fill out order forms again.</p>
+                <p class="privacy__text">We use the information contained in cookies in order to facilitate the use of our site and to adapt the website to your needs. We recommend that you do not disable your browser from accepting cookies, as it will prevent you from moving freely from page to page and from taking advantage of all of the features of the Daria's Lab website.</p>
+                <p class="privacy__text">You can set or amend your web browser controls to accept or reject cookies. If you choose to reject cookies, you may still use our websites and some services, however your access to some functionality and areas of our website or services may be restricted substantially.</p>
+                <p class="privacy__text">Please read our <a href="cookies.html" class="privacy__cookies">Cookie Policy</a> to learn more about how we use cookies and how you can manage them.</p>
+                <h3 id="security" class="privacy__title">9. Security</h3>
+                <p class="privacy__text">Daria's Lab Photography assures that we have taken all administrative, technical and physical measures to protect your personal data against accidental, unlawful or unauthorized destruction, loss, access, disclosure or use.</p>
+                <p class="privacy__text">We ensure that your data will be handled confidentially and encrypted with SSL (Secure-Socket-Layer) secure server software. The encrypted information of your order, your name, address, credit card or bank details cannot be read by any third party. This is noted by a small “lock” icon for any website which uses SSL and is situated in the very beginning of your address bar, right before the web address.</p>
+                <h3 id="links to other websites" class="privacy__title">10. Links to other websites</h3>
+                <p class="privacy__text">For your convenience and information, our website may provide links to other sites that may be operated by companies not affiliated with Daria's Lab Photography. These companies may have their own privacy notices or policies, which we strongly suggest you review.</p>
+                <h3 id="changes" class="privacy__title">11. Changes</h3>
+                <p class="privacy__text">This Privacy Policy may be updated periodically to reflect changes in our personal information practices. For significant changes, we will notify you by posting a prominent notice on our website indicating at the top of the Notice when it was most recently updated. Please review this Privacy Policy from time to time to stay updated on any changes. </p>
+                <h3 id="last updated" class="privacy__title">12. Last updated</h3>
+                <p class="privacy__text">Our Privacy Policy was last updated 2020-09-17. You can view the most current version of the Privacy Policy at any time by clicking on the hyperlink Privacy Policy located in the footer area of the
+                    <a href="index.html">Daria's Lab photography</a>website.</p>
+                <h3 id="contact" class="privacy__title">Contact</h3>
+                <p class="privacy__text">If you have any questions, you can contact us at any time by sending a message to:
+                    <a href="mailto:dariahelthsink@gmail.com" class="privacy__email">dariahelthsink@gmail.com</a></p>
+            </section>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <!-- Footer Customer -->
+            <div class="footer__container--customer">
+                <h3 class="footer__customer-title padding-top">Customer service</h3>
+                <p>
+                    <a class="footer__link" href="terms-conditions.html">Terms and conditions</a>
+                </p>
+                <p>
+                    <a class="footer__link" href="privacy.html">Privacy policy</a>
+                </p>
+                <p>
+                    <a class="footer__link" href="cookies.html">Cookies</a>
+                </p>
+                <p>
+                    <a class="footer__link" href="contact.html">Contact</a>
+                </p>
+            </div>
+            <!-- Footer About -->
+            <div class="footer__container--about">
+                <h3 class="footer__customer-title">About</h3>
+                <a class="footer__link footer__border" href="about.html">About me</a>
+                <ul class="footer__ul">
+                    <li class="footer__item">
+                        <a href="#" class="footer__social-media">
+                            <img class="footer__social-media--icons" src="img/icons/1161954_instagram_icon.png" alt="Instagram">
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__social-media">
+                            <img class="footer__social-media--icons" src="img/icons/facebook.png" alt="Facebook">
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__social-media">
+                            <img class="footer__social-media--icons" src="img/icons/twitter.png" alt="Twitter">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Footer Newsletter -->
+            <div class="footer__container--newsletter">
+                <h3 class="footer__customer-title newsletter">Newsletter</h3>
+                <form class="footer__form">
+                    <p class="footer__tittle">Sign up to receive letters from me !</p>
+                    <label class="footer__label footer__e-mail">
+                        <input class="footer__text" type="email" name="email" placeholder="Your email adress">
+                    </label>
+                    <button class="footer__button" type="submit">Sign up</button>
+                </form>
+            </div>
+        </div>
+        <!-- Footer copyright -->
+        <div class="footer__copyright">
+            Copyright © 2022 Alicia Molinero.
+        </div>
+    </footer>
+</body>
+</html>

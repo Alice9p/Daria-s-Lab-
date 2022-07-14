@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Daria's Lab</title>
+    <link rel="icon" type="image/webp" href="img/favicon.webp">
+    <meta name="theme-color" content="#FBF9FF">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="author" content="Alicia Molinero">
+    <meta name="keywords" content="Photography, blog, projects, presets, articles">
+    <meta name="description" content="Photography, projects and presets">
+    <meta property="og:image" content="img/screenshot.webp">
+    <meta property="og:title" content="Photography Web">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="Daria's Lab Photography">
+    <meta name="twitter:site" content="@cuenta">
+    <meta name="twitter:creator" content="@cuenta">
+    <meta property="og:image:type" content="image/webp">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="Camera">
+    <!-- Normalize -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sapps-studio/symbiosis-css/symbiosis.min.css">
+    <!-- CSS -->
+    <link href="css/mobile.css" rel="stylesheet" media="all and (max-width: 600px)">
+    <link href="css/desktop.css" rel="stylesheet" media="all and (min-width: 601px)">
+    <!-- End CSS -->
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <!-- End JavaScript -->
+</head>
+<body>
+    <!-- Header -->
+    <header class="header"  x-data="{ open: false }">
+        <div class="header__container">
+            <div class="header__items">
+                <div class="header__contact">
+                    <a href="contact.html">
+                        <span class="header__contact-text contact-mobile">Contact</span>
+                    </a>
+                </div>
+                <button class="button nav__open" @click="open = true">
+                    <img src="img/menu.svg" alt="Menu">
+                </button>
+                <!-- Logo -->
+                <div class="header__logo-enlace">
+                    <a href="index.html">
+                        <img class="header__items--img" src="img/DARIAS-LAB.svg" alt="Logo">
+                    </a>
+                </div>
+                <!-- Fin Logo -->
+                <div class="header__shopping-cart">
+                    <a href="cart.html">
+                        <span class="header__cart cart-mobile">Cart</span>
+                    </a>
+                    <a class="header__cart-enlace" href="cart.html">
+                        <img class="header__cart--img" src="img/bag.png" alt="cart">
+                    </a>
+                </div>
+            </div>
+            <!-- Nav -->
+            <nav class="nav" x-bind:class="open ? 'nav__show': ''">
+                <div class="nav__container nav__close-container">
+                    <button class="button nav__close" @click="open = false">
+                        <img src="img/close.svg" alt="Close">
+                    </button>
+                </div>
+                <ul class="nav__ul">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="photography.html" class="nav__link">Photography</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="presets.html" class="nav__link">Presets</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">About me</a>
+                    </li>
+                    <li class="nav__item nav__desktop">
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="cookies-general">
+            <h2 class="cookies-title">Cookie Policy</h2>
+            <section class="cookie">
+                <h3 class="cookie__title">About this Cookie policy</h3>
+                <p class="cookie__text">This Cookie policy explains what cookies are and how we use them. You should read this policy so you can understand what type of cookies we use, the information we collect using cookies and how that information is used. For further information on how we use, store and keep your personal data secure, see our <strong><a href="privacy.html" class="cookie__color">Privacy policy</a></strong>.</p>
+                <h3 class="cookie__title">What Are Cookies</h3>
+                <p class="cookie__text"> Cookies are tiny text files that are downloaded to your computer, to improve your experience. This page describes what information they gather, how we use it and why we sometimes need to store these cookies. We will also share how you can prevent these cookies from being stored however this may downgrade or ‘break’ certain elements of the sites functionality.</p>
+                <p class="cookie__text">For more general information on cookies see the <a href="https://en.wikipedia.org/wiki/HTTP_cookie" target="_blank" class="cookie__hover">Wikipedia article on HTTP Cookies</a>.</p>
+                <h3 class="cookie__title">How We Use Cookies</h3>
+                <p class="cookie__text">We use cookies for a variety of reasons detailed below. Unfortunately in most cases there are no industry standard options for disabling cookies without completely disabling the functionality and features they add to this site. It is recommended that you leave on all cookies if you are not sure whether you need them or not in case they are used to provide a service that you use.</p>
+                <h3 class="cookie__title">How do you change cookie preferences or block cookies?</h3>
+                <p class="cookie__text">You can prevent the setting of cookies by adjusting the settings on your browser (see your browser Help for how to do this). Be aware that disabling cookies will affect the functionality of this and many other websites that you visit. Disabling cookies will usually result in also disabling certain functionality and features of the this site. Therefore it is recommended that you do not disable cookies. For further information please refer to: <strong><a href="https://www.aboutcookies.org/how-to-manage-and-delete-cookies" target="_blank" rel="nofollow" class="cookie__color">https://www.aboutcookies.org/how-to-delete-cookies/</a></strong></p>
+                <h3 class="cookie__title">The Cookies We Set</h3>
+                <ul>
+                    <li>
+                        <p class="cookie__text">Account related cookies</p>
+                        <p class="cookie__text">If you create an account with us then we will use cookies for the management of the signup process and general administration. These cookies will usually be deleted when you log out however in some cases they may remain afterwards to remember your site preferences when logged out.</p>
+                    </li>
+                    <li>
+                        <p class="cookie__text">Email newsletters related cookies</p>
+                        <p class="cookie__text">This site offers newsletter or email subscription services and cookies may be used to remember if you are already registered and whether to show certain notifications which might only be valid to subscribed/unsubscribed users.</p>
+                    </li>
+                    <li>
+                        <p class="cookie__text">Orders processing related cookies</p>
+                        <p class="cookie__text">This site offers e-commerce or payment facilities and some cookies are essential to ensure that your order is remembered between pages so that we can process it properly.</p>
+                    </li>
+                    <li>
+                        <p class="cookie__text">Forms related cookies</p>
+                        <p class="cookie__text">When you submit data to through a form such as those found on contact pages or comment forms cookies may be set to remember your user details for future correspondence.</p>
+                    </li>
+                </ul>
+                <h3 class="cookie__title">Third Party Cookies</h3>
+                <p class="cookie__text">In some special cases we also use cookies provided by trusted third parties. The following section details which third party cookies you might encounter through this site.</p>
+                <ul>
+                    <li>
+                        <p class="cookie__text">This site uses Google Analytics which is one of the most widespread and trusted analytics solution on the web for helping us to understand how you use the site and ways that we can improve your experience. These cookies may track things such as how long you spend on the site and the pages that you visit so we can continue to produce engaging content.</p>
+                        <p class="cookie__text">For more information on Google Analytics cookies,<a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage" target="_blank" class="cookie__color" rel="nofollow"> see the official Google Analytics page.</a></p>
+                    </li>
+                    <li>
+                        <p class="cookie__text">We also use social media share buttons and/or plugins on this site that allow you to connect with your social network in various ways. For these to work, the following social media sites including; {Facebook, Twitter and Instagram}, will set cookies through our site which may be used to enhance your profile on their site or contribute to the data they hold for various purposes outlined in their respective privacy policies.</p>
+                    </li>
+                </ul>
+                <h3 class="cookie__title">Changes to the Cookie policy</h3>
+                <p class="cookie__text">We may update this policy from time to time. If we make significant changes we will let you know but please regularly check this policy to ensure you are aware of the most updated version.</p>
+                <p class="cookie__text">This Cookie policy was last updated on 5th July 2022.</p>
+                <p class="cookie__title">Contact</p>
+                <p class="cookie__text">If you have further questions about our cookie policy, don’t hesitate to contact me.</p>
+                <p class="cookie__text">Email:<a href="mailto:dariahelthsink@gmail.com" class="cookie__hover"> dariahelthsink@gmail.com</a></p>
+            </section>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <!-- Footer Customer -->
+            <div class="footer__container--customer">
+                <h3 class="footer__customer-title padding-top">Customer service</h3>
+                <p>
+                    <a class="footer__link" href="terms-conditions.html">Terms and conditions</a>
+                </p>
+                <p>
+                    <a class="footer__link" href="privacy.html">Privacy policy</a>
+                </p>
+                <p>
+                    <a class="footer__link" href="cookies.html">Cookies</a>
+                </p>
+                <p>
+                    <a class="footer__link" href="contact.html">Contact</a>
+                </p>
+            </div>
+            <!-- Footer About -->
+            <div class="footer__container--about">
+                <h3 class="footer__customer-title">About</h3>
+                <a class="footer__link footer__border" href="about.html">About me</a>
+                <ul class="footer__ul">
+                    <li class="footer__item">
+                        <a href="#" class="footer__social-media">
+                            <img class="footer__social-media--icons" src="img/icons/1161954_instagram_icon.png" alt="Instagram">
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__social-media">
+                            <img class="footer__social-media--icons" src="img/icons/facebook.png" alt="Facebook">
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__social-media">
+                            <img class="footer__social-media--icons" src="img/icons/twitter.png" alt="Twitter">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Footer Newsletter -->
+            <div class="footer__container--newsletter">
+                <h3 class="footer__customer-title newsletter">Newsletter</h3>
+                <form class="footer__form">
+                    <p class="footer__tittle">Sign up to receive letters from me !</p>
+                    <label class="footer__label footer__e-mail">
+                        <input class="footer__text" type="email" name="email" placeholder="Your email adress">
+                    </label>
+                    <button class="footer__button" type="submit">Sign up</button>
+                </form>
+            </div>
+        </div>
+        <!-- Footer copyright -->
+        <div class="footer__copyright">
+            Copyright © 2022 Alicia Molinero.
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Daria's Lab</title>
+    <link rel="icon" type="image/webp" href="img/favicon.webp">
+    <meta name="theme-color" content="#FBF9FF">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="author" content="Alicia Molinero">
+    <meta name="keywords" content="Photography, blog, projects, presets, articles">
+    <meta name="description" content="Photography, projects and presets">
+    <meta property="og:image" content="img/screenshot.webp">
+    <meta property="og:title" content="Photography Web">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="Daria's Lab Photography">
+    <meta name="twitter:site" content="@cuenta">
+    <meta name="twitter:creator" content="@cuenta">
+    <meta property="og:image:type" content="image/webp">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="Camera">
+    <!-- Normalize -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sapps-studio/symbiosis-css/symbiosis.min.css">
+    <!-- CSS -->
+    <link href="css/mobile.css" rel="stylesheet" media="all and (max-width: 600px)">
+    <link href="css/desktop.css" rel="stylesheet" media="all and (min-width: 601px)">
+    <!-- End CSS -->
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <!-- End JavaScript -->
+</head>
+<body>
+    <!-- Header -->
+    <header class="header"  x-data="{ open: false }">
+        <div class="header__container">
+            <div class="header__items">
+                <div class="header__contact">
+                    <a href="contact.html">
+                        <span class="header__contact-text contact-mobile">Contact</span>
+                    </a>
+                </div>
+                <button class="button nav__open" @click="open = true">
+                    <img src="img/menu.svg" alt="Menu">
+                </button>
+                <!-- Logo -->
+                <div class="header__logo-enlace">
+                    <a href="index.html">
+                        <img class="header__items--img" src="img/DARIAS-LAB.svg" alt="Logo">
+                    </a>
+                </div>
+                <!-- Fin Logo -->
+                <div class="header__shopping-cart">
+                    <a href="cart.html">
+                        <span class="header__cart cart-mobile">Cart</span>
+                    </a>
+                    <a class="header__cart-enlace" href="cart.html">
+                        <img class="header__cart--img" src="img/bag.png" alt="cart">
+                    </a>
+                </div>
+            </div>
+            <!-- Nav -->
+            <nav class="nav" x-bind:class="open ? 'nav__show': ''">
+                <div class="nav__container nav__close-container">
+                    <button class="button nav__close" @click="open = false">
+                        <img src="img/close.svg" alt="Close">
+                    </button>
+                </div>
+                <ul class="nav__ul">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="photography.html" class="nav__link">Photography</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="presets.html" class="nav__link">Presets</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">About me</a>
+                    </li>
+                    <li class="nav__item nav__desktop">
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="conditions">
+            <h2 class="conditions-title">Terms and conditions</h2>
+            <section class="generals">
+                <h3 class="generals__title">1. General</h3>
+                <p class="generals__text">1.1 Daria'sLab.com is a website operated by Alicia Molinero.</p>
+                <p class="generals__text">1.2 These Terms and Conditions apply when you as a Customer (place an order via www.dariaslab.com and related pages, (the “Website”). With these agreement you also confirm that you have read and approved our Privacy policy.</p>
+                <p class="generals__text">1.3 Alicia Molinero reserves the right for any image and writing errors on the page, such as errors in description, technical specification, prices and price adjustments. In case of incorrect price for an item ordered, Daria's Lab will inform the Customer of this and await the Customer’s approval of the corrected price before proceeding with the order.</p>
+                <h3 class="generals__title">2. Orders</h3>
+                <p class="generals__text">2.1 When the Customer has placed an order on the Website, a purchase agreement has been entered into between the Customer and Daria's Lab. Daria's Lab recommend the Customer to save the order confirmation for any future contacts with our customer service. The order confirmation is also the receipt that the purchase has been completed.</p>
+                <p class="generals__text">2.2 The Customer is responsible for ensuring that the information provided, such as email, name and address is correct and up to date.</p>
+                <p class="generals__text">2.3 The Customer can cancel their order up until it has been confirmed by Jonna Jinton Sweden. If the order is cancelled, Jonna Jinton Sweden will refund any payments the Customer or their pay- or credit card company has made with regard to the order. If the Customer want to cancel their order after the order is confirmed by Jonna Jinton Sweden, the Customer can send an email to support@jonnajintonsweden.com as soon as possible after the order confirmation. If the order already has been sent, it will be processed as a return (as set forth in Section 5).</p>
+                <h3 class="generals__title">3. Prices and payments</h3>
+                <p class="generals__text">3.1 The prices on our Website apply to orders placed on the Website. All prices are shown including 25% VAT (for delivery within the EU). VAT is not included in countries outside the EU.</p>
+                <p class="generals__text">3.2 The Customer is responsible for any customs duties being paid to the customs or equivalent authority in the country to which the Product / Products are finally delivered.</p>
+                <p class="generals__text">3.4 All payments are encrypted and processed according to the highest security standard.</p>
+                <p class="generals__text">The Customer has several options to pay for the purchase.</p>
+                <ul>
+                    <li>Debit or Credit CARD via Stripe –  Visa, Mastercard and American Express. Available worldwide.</li>
+                    <li>PAYPAL – Account or credit card. Available worldwide.</li>
+                </ul>
+                <h3 class="generals__title">4. Changes to the terms and conditions</h3>
+                <p class="generals__text">Daria's Lab may make changes to the Terms of Conditions from time to time. When these changes are made, Jonna Jinton Sweden will make a new copy of the Terms and Conditions available on its website.</p>
+                <p class="generals__text">Your continued use of our website after any changes to the Terms and Conditions  means you accept the changes.</p>
+                <h3 class="generals__title">5. Contact information</h3>
+                <p class="generals__text">Communication between the Customer and Daria's Lab, occurs via e-mail to: <a href="mailto:dariahelthsink@gmail.com" class="generals__email">dariahelthsink@gmail.com</a></p>
+                <p class="generals__updated">Terms and Conditions last updated 2022-07-12</p>
+            </section>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <!-- Footer Customer -->
+            <div class="footer__container--customer">
+                <h3 class="footer__customer-title padding-top">Customer service</h3>
+                <p>
+                    <a class="footer__link" href="terms-conditions.html">Terms and conditions</a>
+                </p>
+                <p>
+                    <a class="footer__link" href="privacy.html">Privacy policy</a>
+                </p>
+                <p>
+                    <a class="footer__link" href="cookies.html">Cookies</a>
+                </p>
+                <p>
+                    <a class="footer__link" href="contact.html">Contact</a>
+                </p>
+            </div>
+            <!-- Footer About -->
+            <div class="footer__container--about">
+                <h3 class="footer__customer-title">About</h3>
+                <a class="footer__link footer__border" href="about.html">About me</a>
+                <ul class="footer__ul">
+                    <li class="footer__item">
+                        <a href="#" class="footer__social-media">
+                            <img class="footer__social-media--icons" src="img/icons/1161954_instagram_icon.png" alt="Instagram">
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__social-media">
+                            <img class="footer__social-media--icons" src="img/icons/facebook.png" alt="Facebook">
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__social-media">
+                            <img class="footer__social-media--icons" src="img/icons/twitter.png" alt="Twitter">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Footer Newsletter -->
+            <div class="footer__container--newsletter">
+                <h3 class="footer__customer-title newsletter">Newsletter</h3>
+                <form class="footer__form">
+                    <p class="footer__tittle">Sign up to receive letters from me !</p>
+                    <label class="footer__label footer__e-mail">
+                        <input class="footer__text" type="email" name="email" placeholder="Your email adress">
+                    </label>
+                    <button class="footer__button" type="submit">Sign up</button>
+                </form>
+            </div>
+        </div>
+        <!-- Footer copyright -->
+        <div class="footer__copyright">
+            Copyright © 2022 Alicia Molinero.
+        </div>
+    </footer>
+</body>
+</html>

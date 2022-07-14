@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Daria's Lab</title>
+    <link rel="icon" type="image/webp" href="img/favicon.webp">
+    <meta name="theme-color" content="#FBF9FF">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="author" content="Alicia Molinero">
+    <meta name="keywords" content="Photography, blog, projects, presets, articles">
+    <meta name="description" content="Photography, projects and presets">
+    <meta property="og:image" content="img/screenshot.webp">
+    <meta property="og:title" content="Photography Web">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="Daria's Lab Photography">
+    <meta name="twitter:site" content="@cuenta">
+    <meta name="twitter:creator" content="@cuenta">
+    <meta property="og:image:type" content="image/webp">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="Camera">
+    <!-- Normalize -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sapps-studio/symbiosis-css/symbiosis.min.css">
+    <!-- CSS -->
+    <link href="css/mobile.css" rel="stylesheet" media="all and (max-width: 600px)">
+    <link href="css/desktop.css" rel="stylesheet" media="all and (min-width: 601px)">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- End CSS -->
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- End JavaScript -->
+</head>
+<body>
+    <!-- Header -->
+    <header class="header"  x-data="{ open: false }">
+        <div class="header__container">
+            <div class="header__items">
+                <div class="header__contact">
+                    <a href="contact.html">
+                        <span class="header__contact-text contact-mobile">Contact</span>
+                    </a>
+                </div>
+                <button class="button nav__open" @click="open = true">
+                    <img src="img/menu.svg" alt="Menu">
+                </button>
+                <!-- Logo -->
+                <div class="header__logo-enlace">
+                    <a href="index.html">
+                        <img class="header__items--img" src="img/DARIAS-LAB.svg" alt="Logo">
+                    </a>
+                </div>
+                <!-- Fin Logo -->
+                <div class="header__shopping-cart">
+                    <a href="cart.html">
+                        <span class="header__cart cart-mobile">Cart</span>
+                    </a>
+                    <a class="header__cart-enlace" href="cart.html">
+                        <img class="header__cart--img" src="img/bag.png" alt="cart">
+                    </a>
+                </div>
+            </div>
+            <!-- Nav -->
+            <nav class="nav" x-bind:class="open ? 'nav__show': ''">
+                <div class="nav__container nav__close-container">
+                    <button class="button nav__close" @click="open = false">
+                        <img src="img/close.svg" alt="Close">
+                    </button>
+                </div>
+                <ul class="nav__ul">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="photography.html" class="nav__link">Photography</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="presets.html" class="nav__link">Presets</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">About me</a>
+                    </li>
+                    <li class="nav__item nav__desktop">
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- Tittle Home -->
+        <section class="landing">
+            <div class="landing__container">
+                <div class="landing__tittle">
+                    <h1 class="landing__tittle--text">“The important thing is not the camera but the eye.”</h1>
+                    <p class="landing__tittle--author"> ~ Alfred Eisenstaedt ~ </p>
+                    <!-- Camera -->
+                    <div class="icon-camera">
+                        <svg class="icon-camara" id="camara" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 541.72 452.06"><defs><style>.cls-1,.cls-2,.cls-3{fill:#d7d3d0
+                        ;stroke:#1d1d1b;stroke-linecap:round;stroke-linejoin:round;fill-rule:evenodd;}.cls-1{stroke-width:23.87px;}.cls-2{stroke-width:23.87px;}.cls-3{stroke-width:23.86px;}</style></defs><title>camara</title><path class="cls-1" d="M89.3,203.88H208.46A180.58,180.58,0,0,0,219,184.81c6-13.3,27.93-15.3,27.93-15.3H328s21.95,2,27.93,15.3a180.56,180.56,0,0,0,10.51,19.07h64.37V182.82a13.34,13.34,0,0,1,13.3-13.3h31.26a13.34,13.34,0,0,1,13.3,13.3V204a61,61,0,0,1,57.69,60.68V537a60.93,60.93,0,0,1-60.75,60.75H89.3A60.93,60.93,0,0,1,28.54,537V264.63A60.93,60.93,0,0,1,89.3,203.88Z" transform="translate(-16.61 -157.58)"/><path class="cls-2" d="M546.4,503.1V537a60.93,60.93,0,0,1-60.75,60.75H89.3A60.93,60.93,0,0,1,28.54,537V503.1Z" transform="translate(-16.61 -157.58)"/><path class="cls-1" d="M287.47,250.13A156.93,156.93,0,1,0,444.4,407.06,157,157,0,0,0,287.47,250.13Z" transform="translate(-16.61 -157.58)"/><path class="cls-3" d="M287.47,314.77a92.29,92.29,0,1,0,92.29,92.29,92.3,92.3,0,0,0-92.29-92.29Z" transform="translate(-16.61 -157.58)"/><path class="cls-1" d="M94.83,239H113A24,24,0,0,1,136.91,263h0A24,24,0,0,1,113,286.92H94.83A24,24,0,0,1,70.89,263h0A24,24,0,0,1,94.83,239Z" transform="translate(-16.61 -157.58)"/></svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Photography types -->
+        <section class="photography">
+            <div class="photography__box">
+                <!-- Title Photography -->
+                <div class="photography__box--title">
+                    <h1 class="photography__title">Photography</h1>
+                </div>
+                <!-- Pictures Photography -->
+                <div class="photography__blocs">
+                    <!-- Nature -->
+                    <div class="photography__item">
+                        <a href="photography.html">
+                            <div class="photography__modal mobile">Nature</div>
+                            <img class="photography__blocs--img" src="img/home/leafs.webp" alt="">
+                        </a>
+                    </div>
+                    <!-- Street -->
+                    <div class="photography__item mobile">
+                        <a href="photography.html">
+                            <div class="photography__modal">Street</div>
+                            <img class="photography__blocs--img" src="img/home/bali.webp" alt="">
+                        </a>
+                    </div>
+                    <!-- Events -->
+                    <div class="photography__item mobile">
+                        <a href="photography.html">
+                            <div class="photography__modal">Events</div>
+                            <img class="photography__blocs--img" src="img/home/turkey.webp" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Presets -->
+        <section class="presets">
+            <div class="presets__container">
+                <!-- Preset Tittle -->
+                <div class="presets__container--title">
+                    <h1 class="presets__title">Presets</h1>
+                </div>
+                <div class="presets__blocs">
+                    <!-- Preset Description -->
+                    <div class="presets__description">
+                        <p class="presets__description--text">Here you can find a large selection of presets to add to your pictures.</p>
+                    </div>
+                    <!-- Preset image -->
+                    <div class="presets__item">
+                        <div class="presets__general" data-aos="fade-up">
+                            <a href="presets.html">
+                                <img class="presets__img" src="img/home/home-presets.webp" alt="Preset woods">
+                            </a>
+                            <div class="presets__text">
+                                <a class="presets__link" href="presets.html">
+                                    <span class="presets__link--button">Shop presets</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="presets__general" data-aos="fade-up">
+                            <a href="presets.html">
+                                <img class="presets__img" src="img/home/presets-home.webp" alt="Preset woods">
+                            </a>
+                            <div class="presets__text">
+                                <a class="presets__link" href="presets.html">
+                                    <span class="presets__link--button">Shop presets</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog -->
+        <section class="blog">
+            <div class="blog__box">
+                <!-- Tittle Blog -->
+                <div class="blog__box--title">
+                    <h1 class="blog__title">Latest photography articles</h1>
+                </div>
+                    <!-- Articles -->
+                    <div class="blog__articles">
+                        <!-- Lenses -->
+                        <article class="blog__articles--article">
+                            <a class="blog__link" href="blog-lenses.html">
+                                <img class="blog__img" src="img/home/camera.webp" alt="">
+                            </a>
+                                <div class="blog__texts">
+                                    <p class="blog__texts--text">Renting lensens and other photography gear</p>
+                                    <a class="blog__texts--button" href="blog-lenses.html">Read more ➝</a>
+                                </div>
+                        </article>
+                        <!-- Water -->
+                        <article class="blog__articles--article mobile">
+                            <a class="blog__link" href="water-blog.html">
+                                <img class="blog__img" src="img/home/stones.webp" alt="">
+                            </a>
+                                <div class="blog__texts">
+                                    <p class="blog__texts--text">How to shoot long exposure water photography</p>
+                                    <a class="blog__texts--button" href="water-blog.html">Read more ➝</a>
+                                </div>
+                        </article>
+                        <!-- Winter -->
+                        <article class="blog__articles--article">
+                            <a class="blog__link" href="winter-blog.html">
+                                <img class="blog__img" src="img/home/winter.webp" alt="">
+                            </a>
+                                <div class="blog__texts">
+                                    <p class="blog__texts--text">Ideas for what to shoot in winter</p>
+                                    <a class="blog__texts--button" href="winter-blog.html">Read more ➝</a>
+                                </div>
+                        </article>
+                    </div>
+            </div>
+        </section>
+    </main>
+    <!-- Cookies -->
+    <section class="warning">
+        <p class="warning__title">This website uses cookies to ensure you get the best experience. By using our website, you agree to our use of cookies.</p>
+        <a href="cookies.html" class="warning__link">Learn more</a>
+        <div class="warning__buttons">
+            <button class="warning__button warning__button--no">Decline</button>
+            <button class="warning__button warning__button--yes">Allow cookies</button>
+        </div>
+    </section>
+    <div id="nuevosScripts"></div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <!-- Footer Customer -->
+            <div class="footer__container--customer">
+                <h3 class="footer__customer-title padding-top">Customer service</h3>
+                <p>
+                    <a class="footer__link" href="terms-conditions.html">Terms and conditions</a>
+                </p>
+                <p>
+                    <a class="footer__link" href="privacy.html">Privacy policy</a>
+                </p>
+                <p>
+                    <a class="footer__link" href="cookies.html">Cookies</a>
+                </p>
+                <p>
+                    <a class="footer__link" href="contact.html">Contact</a>
+                </p>
+            </div>
+            <!-- Footer About -->
+            <div class="footer__container--about">
+                <h3 class="footer__customer-title">About</h3>
+                <a class="footer__link footer__border" href="about.html">About me</a>
+                <ul class="footer__ul">
+                    <li class="footer__item">
+                        <a href="#" class="footer__social-media">
+                            <img class="footer__social-media--icons" src="img/icons/1161954_instagram_icon.png" alt="Instagram">
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__social-media">
+                            <img class="footer__social-media--icons" src="img/icons/facebook.png" alt="Facebook">
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__social-media">
+                            <img class="footer__social-media--icons" src="img/icons/twitter.png" alt="Twitter">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Footer Newsletter -->
+            <div class="footer__container--newsletter">
+                <h3 class="footer__customer-title newsletter">Newsletter</h3>
+                <form class="footer__form">
+                    <p class="footer__tittle">Sign up to receive letters from me !</p>
+                    <label class="footer__label footer__e-mail">
+                        <input class="footer__text" type="email" name="email" placeholder="Your email adress">
+                    </label>
+                    <button class="footer__button" type="submit">Sign up</button>
+                </form>
+            </div>
+        </div>
+        <!-- Footer copyright -->
+        <div class="footer__copyright">
+            Copyright © 2022 Alicia Molinero.
+        </div>
+    </footer>
+    <!-- Script Camera -->
+    <script>
+        new Vivus('camara', {duration: 200});
+    </script>
+    <!-- Script Presets -->
+    <script>
+        AOS.init();
+    </script>
+    <!-- Script Cookies -->
+    <script defer>
+        let cookies = () => {
+            //======================================================================
+            // COOKIES
+            //======================================================================
+
+            //-----------------------------------------------------
+            // Configuración
+            //-----------------------------------------------------
+            const urlsScriptsCookies = ['https://analytics.google.com', 'https://facebook.com'];
+
+            function contenidoScriptsCookies () {
+                ////////////  ¿Google Analítics? /////////////
+                ////////////  ¿Facebook Pixel? /////////////
+                ////////////  ¿Admob? /////////////
+                ////////////  etc  /////////////
+            }
+
+
+            //-----------------------------------------------------
+            // Variables
+            //-----------------------------------------------------
+            const seccionCookie = document.querySelector('.warning');
+            const cookieSi = document.querySelector('.warning__button--no');
+            const cookieNo = document.querySelector('.warning__button--yes');
+            const nuevosScripts = document.querySelector('#nuevosScripts');
+
+            //-----------------------------------------------------
+            // Funciones
+            //-----------------------------------------------------
+
+            /**
+             * Método que oculta la sección de Cookie para siempre
+             */
+            function ocultarCookie() {
+                // Borra la sección de cookies en el HTML
+                seccionCookie.remove();
+            }
+
+            /**
+             * Método que marca las cookies como aceptadas
+             */
+            function aceptarCookies() {
+                // Oculta el HTML de cookies
+                ocultarCookie();
+                // Guarda que ha aceptado
+                localStorage.setItem('cookie', true);
+                // Tu codigo a ejecutar si aceptan las cookies
+                ejecutarSiAcepta();
+            }
+
+            /**
+             * Método que marca las cookies como denegadas
+             */
+            function denegarCookies() {
+                // Oculta el HTML de cookies
+                ocultarCookie();
+                // Guarda que ha aceptado
+                localStorage.setItem('cookie', false);
+            }
+
+            /**
+             * Método que ejecuta tu código si aceptan las cookies
+             */
+            function ejecutarSiAcepta() {
+                // Crea los <script>
+                urlsScriptsCookies.forEach((url) => {
+                    const nuevoScript = document.createElement('script');
+                    nuevoScript.setAttribute('src', url);
+                    nuevosScripts.appendChild(nuevoScript);
+                });
+                // Lanza los códigos
+                contenidoScriptsCookies();
+            }
+
+            /**
+             * Método que inicia la lógica
+             */
+            function iniciar() {
+                // Comprueba si en el pasado el usuario ha marcado una opción
+                if (localStorage.getItem('cookie') !== null) {
+                    if(localStorage.getItem('cookie') === 'true') {
+                        // Aceptó
+                        aceptarCookies();
+                    } else {
+                        // No aceptó
+                        denegarCookies();
+                    }
+                }
+            }
+
+            //-----------------------------------------------------
+            // Eventos
+            //-----------------------------------------------------
+            cookieSi.addEventListener('click',aceptarCookies, false);
+            cookieNo.addEventListener('click',denegarCookies, false);
+
+            return {
+                iniciar: iniciar
+            }
+        };
+
+        // Activa el código. Comenta si quieres desactivarlo.
+        cookies().iniciar();
+    </script>
+</body>
+</html>

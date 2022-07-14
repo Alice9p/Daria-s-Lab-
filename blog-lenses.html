@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Daria's Lab</title>
+    <link rel="icon" type="image/webp" href="img/favicon.webp">
+    <meta name="theme-color" content="#FBF9FF">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="author" content="Alicia Molinero">
+    <meta name="keywords" content="Photography, blog, projects, presets, articles">
+    <meta name="description" content="Photography, projects and presets">
+    <meta property="og:image" content="img/screenshot.webp">
+    <meta property="og:title" content="Photography Web">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="Daria's Lab Photography">
+    <meta name="twitter:site" content="@cuenta">
+    <meta name="twitter:creator" content="@cuenta">
+    <meta property="og:image:type" content="image/webp">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="Camera">
+    <!-- Normalize -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sapps-studio/symbiosis-css/symbiosis.min.css">
+    <!-- CSS -->
+    <link href="css/mobile.css" rel="stylesheet" media="all and (max-width: 600px)">
+    <link href="css/desktop.css" rel="stylesheet" media="all and (min-width: 601px)">
+    <!-- End CSS -->
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <!-- End JavaScript -->
+</head>
+<body>
+    <!-- Header -->
+    <header class="header"  x-data="{ open: false }">
+        <div class="header__container">
+            <div class="header__items">
+                <div class="header__contact">
+                    <a href="contact.html">
+                        <span class="header__contact-text contact-mobile">Contact</span>
+                    </a>
+                </div>
+                <button class="button nav__open" @click="open = true">
+                    <img src="img/menu.svg" alt="Menu">
+                </button>
+                <!-- Logo -->
+                <div class="header__logo-enlace">
+                    <a href="index.html">
+                        <img class="header__items--img" src="img/DARIAS-LAB.svg" alt="Logo">
+                    </a>
+                </div>
+                <!-- Fin Logo -->
+                <div class="header__shopping-cart">
+                    <a href="cart.html">
+                        <span class="header__cart cart-mobile">Cart</span>
+                    </a>
+                    <a class="header__cart-enlace" href="cart.html">
+                        <img class="header__cart--img" src="img/bag.png" alt="cart">
+                    </a>
+                </div>
+            </div>
+            <!-- Nav -->
+            <nav class="nav" x-bind:class="open ? 'nav__show': ''">
+                <div class="nav__container nav__close-container">
+                    <button class="button nav__close" @click="open = false">
+                        <img src="img/close.svg" alt="Close">
+                    </button>
+                </div>
+                <ul class="nav__ul">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="photography.html" class="nav__link">Photography</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="presets.html" class="nav__link">Presets</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">About me</a>
+                    </li>
+                    <li class="nav__item nav__desktop">
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="blog-title">
+            <!-- Title -->
+            <h1 class="blog-title__text">Renting lesens and other photography gear</h1>
+        </section>
+        <div class="article-container">
+            <article class="blogs">
+                <div>
+                    <img class="blogs__front-page" src="img/lenses-blog/object-camera.webp" alt="Front page">
+                </div>
+                <p class="blogs__texts">Buying photography gear nearly always involves conflicting emotions. On one hand, you’re excited about your new toy(s) and can hardly wait to test it out. On the other hand, you feel pained every time you think about how much it cost.</p>
+                <p class="blogs__texts">And there are a lot of toys that you can buy in the photography world. Unfortunately, only about 0.001% of photographers have unlimited budgets to spend on new gear. </p>
+                <p class="blogs__texts">The rest of us are stuck trying to figure out what gear is worth it for us.</p>
+                <p class="blogs__texts">But, how do you know that a $2,500 lens is worth it for you if you’ve never used one before? Is the Canon R6 worth the money or are you just as happy with the RP and its much cheaper price tag?</p>
+                <p class="blogs__texts">Why not rent the gear you want to try? For just a fraction of the cost, you can find out if that new lens you’ve been eyeing really is as amazing as they say. Let’s look at how it works!</p>
+                <div>
+                    <img class="blogs__picture" src="img/lenses-blog/girl-camera.webp" alt="">
+                </div>
+                    <h2 class="blogs__subtitle">Who rents camera gear?</h2>
+                <p class="blogs__texts">If you’ve never heard of renting camera gear before, this might seem a little strange. After all, who would be willing to lend out expensive camera gear to complete strangers?</p>
+                <p class="blogs__texts">Thankfully, there are companies that are willing to take on the risk. A big one is LensRentals.com. It doesn’t matter where you live in the US, these guys will ship your rented gear directly to your door.</p>
+                <p class="blogs__texts">When you check out their catalog, you’ll see that they have a huge list of cameras, lenses, lights, and other accessories such as tripods, light modifiers, and even batteries.</p>
+                <div>
+                    <img class="blogs__picture" src="img/lenses-blog/object-only.webp" alt="">
+                </div>
+                <div class="blogs__subtitle">
+                    <h2 class="blogs__subtitle">How it works to rent camera gear</h2>
+                </div>
+                <p class="blogs__texts">Renting the gear is super easy with LensRentals.com. Simply enter the site and choose the gear you want to rent. Go to the checkout to find out how much it will cost. The price depends on a few factors including what you want to rent as well as the number of days you want to have it.</p>
+                <p class="blogs__texts">Your gear will be shipped to you anywhere in the US and you’ll be charged the day it ships out.</p>
+                <p class="blogs__texts">When you receive it, we recommend taking a picture of the contents. This will help you put everything back correctly when it’s time to pack it up and ship it back.</p>
+                <p class="blogs__texts">LensRentals.com makes the whole process super simple. It even comes with a return shipping label so sending it back is a breeze!</p>
+                <div class="blogs__subtitle">
+                    <h2 class="blogs__subtitle">Insurance</h2>
+                </div>
+                <p class="blogs__texts">What if you break it?</p>
+                <p class="blogs__texts">If you’ve ever heard the sound of your $2,500 camera with its $1,500 lens hitting concrete, you understand the gut-wrenching feeling. We all strive to keep our camera gear safe but accidents happen.</p>
+                <p class="blogs__texts">What if one of these accidents happens to a $2,500 lens you rented specifically because you can’t afford to buy it?</p>
+                <p class="blogs__texts">Thankfully, there’s a little thing called insurance. Lensrentals.com offers two optional add-ons that limit your liability if something terrible happens. The basic plan covers drops, spills, and even bear attacks while limiting your liability to 10% of the item’s value.</p>
+                <p class="blogs__texts">The plus plan offers the same plus a few other events that might ruin the equipment. These include:</p>
+                <ol class="blogs__texts">
+                    <li>Windstorm</li>
+                    <li>Fire</li>
+                    <li>Lighting</li>
+                    <li>Theft</li>
+                    <li>Falling out of an aircraft (what!?)</li>
+                    <li>Flood</li>
+                    <li>Earthquake</li>
+                </ol>
+                <p class="blogs__texts">In other words, if you find that you had really, really bad luck during your rental period, you won’t have to pay 100% of the value.</p>
+                <p class="blogs__texts">You’re still liable for a portion plus the event needs to be one of the covered ones to be eligible for coverage. So, take good care of the equipment while you have it.</p>
+                <div>
+                    <img class="blogs__picture" src="img/lenses-blog/objects-camera.webp" alt="">
+                </div>
+                <div class="blogs__subtitle">
+                    <h2 class="blogs__subtitle">Renting camera gear</h2>
+                </div>
+                <p class="blogs__texts">There is a plethora of information and reviews online to help you in your camera gear buying decisions. Plus, you can always go to a store to handle a new camera or ogle over a new lens.</p>
+                <p class="blogs__texts">However, you won’t truly get a good feel for that gear and how it will work for you until you actually use it under your typical shooting conditions. </p>
+                <p class="blogs__texts">This is where renting camera gear shines. You can interact with it and see the image quality for yourself. You can find out which accessories are super helpful for the type of images you typically shoot and so much more.</p>
+                <p class="blogs__texts">The best part is that it all happens at a tiny fraction of the price that it would be to buy all that gear. </p>
+                <p class="blogs__texts">Even if you buy something and figure you can resell it if you don’t like it, there’s still the hassle involved in finding a buyer and selling it. Plus, you won’t be able to get 100% of the purchase price anyway.</p>
+                <p class="blogs__texts">Renting is a much simpler solution!</p>
+                <div class="border"></div>
+                <!-- Comments -->
+                <p class="comments">Leave a comment</p>
+                <form class="form-blog">
+                    <label>
+                        <input class="form-blog__text" type="text" name="name" placeholder="Name">
+                    </label>
+                    <label class="form-blog__box">
+                        <input class="form-blog__text" type="email" name="email" placeholder="Your email adress">
+                    </label>
+                    <div class="form-blog__message">
+                        <label>
+                            <textarea class="form-blog__comment" name="message" placeholder="Message"></textarea>
+                        </label>
+                    </div>
+                    <button class="form-blog__button" type="submit">Post</button>
+                </form>
+            </article>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <!-- Footer Customer -->
+            <div class="footer__container--customer">
+                <h3 class="footer__customer-title padding-top">Customer service</h3>
+                <p>
+                    <a class="footer__link" href="terms-conditions.html">Terms and conditions</a>
+                </p>
+                <p>
+                    <a class="footer__link" href="privacy.html">Privacy policy</a>
+                </p>
+                <p>
+                    <a class="footer__link" href="cookies.html">Cookies</a>
+                </p>
+                <p>
+                    <a class="footer__link" href="contact.html">Contact</a>
+                </p>
+            </div>
+            <!-- Footer About -->
+            <div class="footer__container--about">
+                <h3 class="footer__customer-title">About</h3>
+                <a class="footer__link footer__border" href="about.html">About me</a>
+                <ul class="footer__ul">
+                    <li class="footer__item">
+                        <a href="#" class="footer__social-media">
+                            <img class="footer__social-media--icons" src="img/icons/1161954_instagram_icon.png" alt="Instagram">
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__social-media">
+                            <img class="footer__social-media--icons" src="img/icons/facebook.png" alt="Facebook">
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__social-media">
+                            <img class="footer__social-media--icons" src="img/icons/twitter.png" alt="Twitter">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Footer Newsletter -->
+            <div class="footer__container--newsletter">
+                <h3 class="footer__customer-title newsletter">Newsletter</h3>
+                <form class="footer__form">
+                    <p class="footer__tittle">Sign up to receive letters from me !</p>
+                    <label class="footer__label footer__e-mail">
+                        <input class="footer__text" type="email" name="email" placeholder="Your email adress">
+                    </label>
+                    <button class="footer__button" type="submit">Sign up</button>
+                </form>
+            </div>
+        </div>
+        <!-- Footer copyright -->
+        <div class="footer__copyright">
+            Copyright © 2022 Alicia Molinero.
+        </div>
+    </footer>
+</body>
+</html>

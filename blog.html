@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Daria's Lab</title>
+    <link rel="icon" type="image/webp" href="img/favicon.webp">
+    <meta name="theme-color" content="#FBF9FF">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="author" content="Alicia Molinero">
+    <meta name="keywords" content="Photography, blog, projects, presets, articles">
+    <meta name="description" content="Photography, projects and presets">
+    <meta property="og:image" content="img/screenshot.webp">
+    <meta property="og:title" content="Photography Web">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="Daria's Lab Photography">
+    <meta name="twitter:site" content="@cuenta">
+    <meta name="twitter:creator" content="@cuenta">
+    <meta property="og:image:type" content="image/webp">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="Camera">
+    <!-- Normalize -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sapps-studio/symbiosis-css/symbiosis.min.css">
+    <!-- CSS -->
+    <link href="css/mobile.css" rel="stylesheet" media="all and (max-width: 600px)">
+    <link href="css/desktop.css" rel="stylesheet" media="all and (min-width: 601px)">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- End CSS -->
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- End JavaScript -->
+</head>
+<body>
+    <!-- Header -->
+    <header class="header"  x-data="{ open: false }">
+        <div class="header__container">
+            <div class="header__items">
+                <div class="header__contact">
+                    <a href="contact.html">
+                        <span class="header__contact-text contact-mobile">Contact</span>
+                    </a>
+                </div>
+                <button class="button nav__open" @click="open = true">
+                    <img src="img/menu.svg" alt="Menu">
+                </button>
+                <!-- Logo -->
+                <div class="header__logo-enlace">
+                    <a href="index.html">
+                        <img class="header__items--img" src="img/DARIAS-LAB.svg" alt="Logo">
+                    </a>
+                </div>
+                <!-- Fin Logo -->
+                <div class="header__shopping-cart">
+                    <a href="cart.html">
+                        <span class="header__cart cart-mobile">Cart</span>
+                    </a>
+                    <a class="header__cart-enlace" href="cart.html">
+                        <img class="header__cart--img" src="img/bag.png" alt="cart">
+                    </a>
+                </div>
+            </div>
+            <!-- Nav -->
+            <nav class="nav" x-bind:class="open ? 'nav__show': ''">
+                <div class="nav__container nav__close-container">
+                    <button class="button nav__close" @click="open = false">
+                        <img src="img/close.svg" alt="Close">
+                    </button>
+                </div>
+                <ul class="nav__ul">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="photography.html" class="nav__link">Photography</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="presets.html" class="nav__link">Presets</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">About me</a>
+                    </li>
+                    <li class="nav__item nav__desktop">
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- Blog description -->
+        <section class="myblog">
+            <div class="myblog__container">
+                <div class="myblog__description">
+                    <h2 class="myblog__description--h2">Do you want to take better photos?</h2>
+                    <p class="myblog__description--text">Hey, I'm Daria Helthsink. I'm determined to help you become a great photographer. The blog is a great way to start that process!</p>
+                </div>
+            </div>
+        </section>
+        <section class="articles">
+            <div class="articles__container">
+                <!-- Lenses blog -->
+                <article class="articles__article">
+                    <div>
+                        <a class="articles__article--link" href="blog-lenses.html" target="_blank">
+                            <img class="articles__article--img" src="img/blog/object-camera.webp" alt="">
+                        </a>
+                    </div>
+                    <div class="articles__texts">
+                        <h3 class="articles__texts--title">Renting lensens and other photography gear</h3>
+                        <p class="articles__texts--text">How do you know that a $2,500 lens is worth it for you if you’ve never used one before?</p>
+                        <p class="articles__texts--text">Why not rent the gear you want to try? For just a fraction of the cost, you can find out if that new lens you’ve been eyeing really is as amazing as they say. Let’s look at how it works!</p>
+                        <div  class="articles__texts--button">
+                            <a href="blog-lenses.html" target="_blank">
+                                Read more ➝
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Water blog -->
+                <article class="articles__article mobile-article" data-aos="fade-up">
+                    <div class="articles__texts">
+                        <h3 class="articles__texts--title">How to shoot long exposure water photography </h3>
+                        <p class="articles__texts--text">Have you ever seen those tranquil images of a waterfall or ocean waves where the water looks like silk? The whole image is in perfect focus, but the water is perfectly smooth. How is it done? It’s easier than you think!</p>
+                        <div  class="articles__texts--button">
+                            <a href="water-blog.html" target="_blank">
+                                Read more ➝
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="articles__article--link" href="water-blog.html" target="_blank">
+                            <img class="articles__article--img" src="img/blog/stones.webp" alt="">
+                        </a>
+                    </div>
+                </article>
+                <!-- Winter blog -->
+                <article class="articles__article" data-aos="fade-up">
+                    <div>
+                        <a class="articles__article--link" href="winter-blog.html" target="_blank">
+                            <img class="articles__article--img" src="img/blog/winter.webp" alt="">
+                        </a>
+                    </div>
+                    <div class="articles__texts">
+                        <h3 class="articles__texts--title"> What to shoot in winter</h3>
+                        <p class="articles__texts--text">Photography is all about finding the beauty, adventure, excitement, emotion, etc in the everyday. </p>
+                        <p class="articles__texts--text">Who decided these moments are limited to Spring, Summer, and Fall?</p>
+                        <div  class="articles__texts--button">
+                            <a href="winter-blog.html" target="_blank">
+                                Read more ➝
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Pager -->
+                <div class="pager">
+                    <ol class="pager__list">
+                        <li class="pager__number">
+                            <a class="pager__link" href="blog.html">1</a>
+                        </li>
+                        <li class="pager__number">
+                            <a class="pager__link" href="blog.html">2</a>
+                        </li>
+                        <li class="pager__number">
+                            <a class="pager__link" href="blog.html">3</a>
+                        </li>
+                        <li class="pager__number">
+                            <a class="pager__link" href="blog.html">4</a>
+                        </li>
+                        <li class="pager__number">
+                            <a class="pager__link" href="blog.html">Next page »</a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <!-- Footer Customer -->
+            <div class="footer__container--customer">
+                <h3 class="footer__customer-title padding-top">Customer service</h3>
+                <p>
+                    <a class="footer__link" href="terms-conditions.html">Terms and conditions</a>
+                </p>
+                <p>
+                    <a class="footer__link" href="privacy.html">Privacy policy</a>
+                </p>
+                <p>
+                    <a class="footer__link" href="cookies.html">Cookies</a>
+                </p>
+                <p>
+                    <a class="footer__link" href="contact.html">Contact</a>
+                </p>
+            </div>
+            <!-- Footer About -->
+            <div class="footer__container--about">
+                <h3 class="footer__customer-title">About</h3>
+                <a class="footer__link footer__border" href="about.html">About me</a>
+                <ul class="footer__ul">
+                    <li class="footer__item">
+                        <a href="#" class="footer__social-media">
+                            <img class="footer__social-media--icons" src="img/icons/1161954_instagram_icon.png" alt="Instagram">
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__social-media">
+                            <img class="footer__social-media--icons" src="img/icons/facebook.png" alt="Facebook">
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__social-media">
+                            <img class="footer__social-media--icons" src="img/icons/twitter.png" alt="Twitter">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Footer Newsletter -->
+            <div class="footer__container--newsletter">
+                <h3 class="footer__customer-title newsletter">Newsletter</h3>
+                <form class="footer__form">
+                    <p class="footer__tittle">Sign up to receive letters from me !</p>
+                    <label class="footer__label footer__e-mail">
+                        <input class="footer__text" type="email" name="email" placeholder="Your email adress">
+                    </label>
+                    <button class="footer__button" type="submit">Sign up</button>
+                </form>
+            </div>
+        </div>
+        <!-- Footer copyright -->
+        <div class="footer__copyright">
+            Copyright © 2022 Alicia Molinero.
+        </div>
+    </footer>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

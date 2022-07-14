@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Daria's Lab</title>
+    <link rel="icon" type="image/webp" href="img/favicon.webp">
+    <meta name="theme-color" content="#FBF9FF">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="author" content="Alicia Molinero">
+    <meta name="keywords" content="Photography, blog, projects, presets, articles">
+    <meta name="description" content="Photography, projects and presets">
+    <meta property="og:image" content="img/screenshot.webp">
+    <meta property="og:title" content="Photography Web">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="Daria's Lab Photography">
+    <meta name="twitter:site" content="@cuenta">
+    <meta name="twitter:creator" content="@cuenta">
+    <meta property="og:image:type" content="image/webp">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="Camera">
+    <!-- Normalize -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sapps-studio/symbiosis-css/symbiosis.min.css">
+    <!-- CSS -->
+    <link href="css/mobile.css" rel="stylesheet" media="all and (max-width: 600px)">
+    <link href="css/desktop.css" rel="stylesheet" media="all and (min-width: 601px)">
+    <!-- End CSS -->
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <!-- End JavaScript -->
+</head>
+<body>
+    <!-- Header -->
+    <header class="header"  x-data="{ open: false }">
+        <div class="header__container">
+            <div class="header__items">
+                <div class="header__contact">
+                    <a href="contact.html">
+                        <span class="header__contact-text contact-mobile">Contact</span>
+                    </a>
+                </div>
+                <button class="button nav__open" @click="open = true">
+                    <img src="img/menu.svg" alt="Menu">
+                </button>
+                <!-- Logo -->
+                <div class="header__logo-enlace">
+                    <a href="index.html">
+                        <img class="header__items--img" src="img/DARIAS-LAB.svg" alt="Logo">
+                    </a>
+                </div>
+                <!-- Fin Logo -->
+                <!-- Cart -->
+                <div class="header__shopping-cart">
+                    <a href="cart.html">
+                        <span class="header__cart cart-mobile">Cart</span>
+                    </a>
+                    <a class="header__cart-enlace" href="cart.html">
+                        <img class="header__cart--img" src="img/bag.png" alt="cart">
+                    </a>
+                </div>
+            </div>
+            <!-- Nav -->
+            <nav class="nav" x-bind:class="open ? 'nav__show': ''">
+                <div class="nav__container nav__close-container">
+                    <button class="button nav__close" @click="open = false">
+                        <img src="img/close.svg" alt="Close">
+                    </button>
+                </div>
+                <ul class="nav__ul">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="photography.html" class="nav__link">Photography</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="presets.html" class="nav__link">Presets</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">About me</a>
+                    </li>
+                    <li class="nav__item nav__desktop">
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="blog-title">
+            <!-- Title -->
+            <h1 class="blog-title__text">What to shoot in winter</h1>
+        </section>
+        <div class="article-container">
+            <article class="blogs">
+                <div>
+                    <img class="blogs__front-page" src="img/winter-blog/winter.webp" alt="Front page">
+                </div>
+                <p class="blogs__texts">When winter rolls around many photography enthusiasts pack up their gear for the season. The days are drab, the weather is miserable, and there isn't anything interesting to photograph. Or is there?</p>
+                <p class="blogs__texts">Photography is all about finding the beauty, adventure, excitement, emotion, etc in the everyday. Who decided these moments are limited to spring, summer, and fall?</p>
+                <p class="blogs__texts">We are of the opinion that you can capture amazing images whatever the weather. However, you do have to be prepared for shooting conditions. Plus, you might have to look harder to find the beauty you want to capture.</p>
+                <h2 class="blogs__subtitle">Protect your gear and yourself</h2>
+                <p class="blogs__texts">Before we get started on what to shoot, let’s talk about the gear you’ll need. We don’t want you to get all excited and head out for a day of shooting only to end up damaging your camera because you didn’t protect it properly.</p>
+                <p class="blogs__texts">When shooting in winter, don’t forget to bring along a zip-up freezer bag. You’ll need this simple piece of equipment to keep your camera safe from its sworn enemy — moisture.Place your camera inside a sealed plastic bag while you’re still outside. This will trap a little cold air around your camera so that it warms up more slowly. Plus, moisture can’t get through the plastic to condensate directly on the camera. </p>
+                <p class="blogs__texts">If it’s actively snowing, it’s important to keep your camera covered in some capacity. Snow, like rain, will get your camera wet. If your camera does get wet, don’t wipe it as this can push moisture into the cracks. Instead, leave it sitting on a towel to air dry for a few hours.</p>
+                <img class="blogs__picture" src="img/winter-blog/litle-ice.webp" alt="">
+                <h2 class="blogs__subtitle">Snow scenes</h2>
+                <p class="blogs__texts">Snow scenes can be gorgeous, ethereal, and majestic (among other attributes). No doubt you’ve seen some amazing landscape images or portraits captured in the snow.</p>
+                <p class="blogs__texts">However, if you’ve ever tried to capture one of those photographs, you may have been underwhelmed by the results. Though the day may have been bright, your photos may have turned out rather dark and drab and the snow looks almost gray. </p>
+                <p class="blogs__texts">What on earth!?</p>
+                <p class="blogs__texts">Well, cameras these days are pretty smart but sometimes they need a little help. On a snowy day, the light is bouncing all over the place and there are reflections galore. The camera’s metering can get confused and turn out images that are somewhat underexposed. That’s what gives the snow its dirty appearance.</p>
+                <p class="blogs__texts">To remedy this, just overexpose slightly when choosing manual settings. If you haven’t ventured too deep into manual settings yet, this is a good time to start!</p>
+                <p class="blogs__texts">Pro tip: get to your shooting location early in the day to avoid other people leaving footprints all over your scene.</p>
+                <p class="blogs__texts">What if there isn’t any snow? Try darkening down your exposure for a more moody ambiance. By embracing the drabness of the scene, you can create some intriguing images even with a bleak winter scene.</p>
+                <img class="blogs__picture" src="img/winter-blog/snow-bowl.webp" alt="">
+                <h2 class="blogs__subtitle">Portraits in the snow</h2>
+                <p class="blogs__texts">Landscapes aren’t the only thing you can shoot outdoors in the winter. If you have some models that don’t mind the cold, it’s so much fun to take portraits in the snow!</p>
+                <p class="blogs__texts">Kids and adults alike look super cute all bundled up in hats and scarves and their colorful clothing is a beautiful contrast with the white snow. Some daring folks might even be brave enough to pose in the snow in a stunning gown or dress clothes. Bring hand warmers and hot cocoa to make it more festive, fun, and a tiny bit warmer. </p>
+                <p class="blogs__texts">What if it’s snowing while you’re taking pictures? Take advantage! Use the burst mode to take multiple shots and give yourself a variety of images to choose from. </p>
+                <p class="blogs__texts">To get those big, blurry snowflakes that add magic to your image, shoot with a long lens (ideally 200mm or longer). Close down the aperture as much as you can, around f/4.5 – f6.3.</p>
+                <p class="blogs__texts">If you want blurry snow trails from the falling flakes, set your camera on a tripod and slow down the shutter speed.</p>
+                <img class="blogs__picture" src="img/winter-blog/trees.webp" alt="">
+                <h2 class="blogs__subtitle">Sunrise and sunset</h2>
+                <p class="blogs__texts">Sunrises and sunsets are always beautiful to photograph but they are especially magical in winter over a snow-kissed scene. As a bonus, you won’t have to get up so early to catch the sunrise since the sun sleeps in during the winter months.</p>
+                <p class="blogs__texts">However, it will be especially cold so be sure to bundle up well before heading out. Try closing down your aperture really small (about f/16 – f/22) to give the sun gorgeous sunburst rays as it peeks over the horizon. However, it will be especially cold so be sure to bundle up well before heading out. Try closing down your aperture really small (about f/16 – f/22) to give the sun gorgeous sunburst rays as it peeks over the horizon.</p>
+                <p class="blogs__texts">There will be a lot of bright light from the sun and strong reflections from the snow that will confuse your camera. We recommend using manual mode and choosing your own settings for best results. </p>
+                <div class="border"></div>
+                <!-- Comments -->
+                <p class="comments">Leave a comment</p>
+                <form class="form-blog">
+                    <label>
+                        <input class="form-blog__text" type="text" name="name" placeholder="Name">
+                    </label>
+                    <label class="form-blog__box">
+                        <input class="form-blog__text" type="email" name="email" placeholder="Your email adress">
+                    </label>
+                    <div class="form-blog__message">
+                        <label>
+                            <textarea class="form-blog__comment" name="message" placeholder="Message"></textarea>
+                        </label>
+                    </div>
+                    <button class="form-blog__button" type="submit">Post</button>
+                </form>
+            </article>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <!-- Footer Customer -->
+            <div class="footer__container--customer">
+                <h3 class="footer__customer-title padding-top">Customer service</h3>
+                <p>
+                    <a class="footer__link" href="terms-conditions.html">Terms and conditions</a>
+                </p>
+                <p>
+                    <a class="footer__link" href="privacy.html">Privacy policy</a>
+                </p>
+                <p>
+                    <a class="footer__link" href="cookies.html">Cookies</a>
+                </p>
+                <p>
+                    <a class="footer__link" href="contact.html">Contact</a>
+                </p>
+            </div>
+            <!-- Footer About -->
+            <div class="footer__container--about">
+                <h3 class="footer__customer-title">About</h3>
+                <a class="footer__link footer__border" href="about.html">About me</a>
+                <ul class="footer__ul">
+                    <li class="footer__item">
+                        <a href="#" class="footer__social-media">
+                            <img class="footer__social-media--icons" src="img/icons/1161954_instagram_icon.png" alt="Instagram">
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__social-media">
+                            <img class="footer__social-media--icons" src="img/icons/facebook.png" alt="Facebook">
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__social-media">
+                            <img class="footer__social-media--icons" src="img/icons/twitter.png" alt="Twitter">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Footer Newsletter -->
+            <div class="footer__container--newsletter">
+                <h3 class="footer__customer-title newsletter">Newsletter</h3>
+                <form class="footer__form">
+                    <p class="footer__tittle">Sign up to receive letters from me !</p>
+                    <label class="footer__label footer__e-mail">
+                        <input class="footer__text" type="email" name="email" placeholder="Your email adress">
+                    </label>
+                    <button class="footer__button" type="submit">Sign up</button>
+                </form>
+            </div>
+        </div>
+        <!-- Footer copyright -->
+        <div class="footer__copyright">
+            Copyright © 2022 Alicia Molinero.
+        </div>
+    </footer>
+</body>
+</html>
